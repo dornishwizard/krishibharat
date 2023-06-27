@@ -1,0 +1,357 @@
+<!--green: #002E19-->
+<!--cream: #FCF9CD-->
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="/Users/shraddhamurali/Documents/Web dev/fontawesome-free-6.4.0-web/css/fontawesome.css">
+        <link rel="stylesheet" href="/Users/shraddhamurali/Documents/Web dev/fontawesome-free-6.4.0-web/css/brands.css">
+        <link rel="stylesheet" href="/Users/shraddhamurali/Documents/Web dev/fontawesome-free-6.4.0-web/css/solid.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <!--<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">-->
+        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+        <style type="text/css">
+            @font-face {
+               font-family: 'Glacial Indifference', sans-serif;
+               src: url('GlacialIndifference-Regular.otf');
+            }
+           
+
+            /* Centered Logo Collapsed*/
+            .navbar 
+            {
+                box-shadow: 0 3px 10px 2px rgba(0,0,0,0.25)
+            }
+            .navbar.has-centered-logo {
+            .navbar-start,
+            .navbar-end{
+                flex: 1 1 0;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem; 
+                font-family: 'Glacial Indifference', sans-serif;
+                font-size: 120%;
+            }
+            .navbar-start {
+                justify-content: flex-end;
+            }
+            .navbar-end {
+                justify-content: flex-start;
+            }
+            .navbar-start:after,
+            .navbar-end:before{
+                /*content:'';
+                display:inline-block;*/
+            }
+            .navbar-brand {
+            }
+            }
+            .navbar-item{
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+            .navbar-item img {
+             max-height: 128px;
+            }
+            a.navbar-item:hover{
+                color: #005228;
+                font-weight: 150%;
+            }
+
+            #logo { 
+                height: 104px;
+                width: 104px;
+            }
+            /*end navbar*/
+
+            /*hero*/
+            .hero h1{
+                color: #005228;
+                font-family: 'Glacial Indifference', sans-serif;
+                font-weight: bolder;
+            }
+
+            #mission, #mission_title, #mission_subtitle, .footer, .footer .title{
+                background-color: #002E19;
+                font-family: 'Glacial Indifference', sans-serif;
+                color: antiquewhite;
+            }
+
+            .title {
+                font-family: 'Glacial Indifference', sans-serif;
+                font-weight: bold;
+            }
+
+            #programs 
+            {
+                color: #002E19;      
+                font-family: 'Glacial Indifference', sans-serif;        
+            }
+            
+            .fa-brands{
+                color: #005228
+            }
+            #contact
+            {
+                text-align: right;
+            }
+
+            @media(max-width: 780px) {
+  			.custom-columns {
+   				 flex-direction: column-reverse;
+   				 display: flex;
+  			}
+            .footer, #contact{
+                text-align: center;
+            }
+            .main {
+                padding-top: 100px;
+            }
+        
+            }
+        </style>
+
+        <title>Krishi Bharat</title>
+    </head>
+    <body>
+        <!--start nav-->
+        
+              
+                        <nav class="navbar is-spaced has-centered-logo is-fixed-top" role="navigation" aria-label="main navigation">
+                            <div class="navbar-brand is-hidden-desktop">
+                                <a class="navbar-item" href="#top" data-aos="fade-in" data-aos-delay="200">
+                                    <img src="logo.png">
+                                </a>
+                                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                </a>
+                            </div>
+                            <div id="navbarBasicExample" class="navbar-menu">
+                                <div class="navbar-start">
+                                    <a class="navbar-item" href="#mission"> Mission </a>
+                                    <a class="navbar-item" href="#programs"> Programs </a>
+                                </div>
+                                <div class="navbar-brand is-hidden-touch">
+                                    <a class="navbar-item" href="#top">
+                    
+                                            <img id="logo" src="logo.png">
+                                        
+                                    </a>
+                                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                                        <span aria-hidden="true"></span>
+                                        <span aria-hidden="true"></span>
+                                        <span aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                                <div class="navbar-end">
+                                    <a class="navbar-item"> Subscribe </a>
+                                    <a class="navbar-item" href="#contact"> Contact </a>
+                                </div>
+                            </div>
+                        </nav>
+                  
+            
+        <!--end nav-->
+        <section class="hero main is-medium" data-aos="fade-up">
+            <div class="hero-body">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="title">A pioneering not-for-profit institution dedicated to promoting environmental awareness and ecological conservation in India.</h1>
+                    </div>
+                    <div class="column">
+                        <figure class="image">
+                            <img src="Images/godwin-bephin-thrnz8zgQDE-unsplash.jpg">
+                        </figure>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        
+        <section class="hero is-medium" id="mission">
+        <div class="hero-body">
+            <p class="title" id="mission_title">
+
+            </p>
+            <p class="subtitle" id="mission_subtitle">
+
+            </p>
+        </div>
+        </section>
+
+        <section class="section" id="programs" data-aos="fade-up">
+            <div class="container is-centered has-text-centered">
+                <h1 class="title">Our Programs</h1>
+                <br>
+                <div class="columns custom-columns is-vcentered has-text-centered" data-aos="fade-up">
+                    <div class="column is-2"></div>
+                    <div class="column">
+                        <figure class="image">
+                            <img src="Images/alok-shenoy-5xYvAlKjxWY-unsplash.jpg"></img>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-4">Sustainable Agriculture</h1>
+                        <br>
+                        <p>We provide training and resources to help farmers adopt sustainable, environmentally friendly and economically viable practices such as crop rotation, organic farming, and water conservation.</p>
+                        <p>We train and support small-holding farmers in sustainable livestock management practices such as animal health, breeding, and feed management.</p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <br>
+                <br>
+                <div class="columns is-vcentered has-text-centered" data-aos="fade-up">
+                    <div class="column is-2"></div>
+                    <div class="column">
+                        <h1 class="title is-4">Rural Development</h1>
+                        <br>
+                        <p>We work with rural communities to identify their development needs and customize programs to address challenges specific to their respective communities. We facilitate the empowerment of these communities by promoting rural entrepreneurship and providing access to markets.</p>
+                    </div>
+                    <div class="column">
+                        <figure class="image">
+                            <img src="Images/deepak-kumar-b4eRRodrirQ-unsplash.jpg"></img>
+                        </figure>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <br>
+                <br>
+                <div class="columns custom-columns is-vcentered has-text-centered" data-aos="fade-up">
+                    <div class="column is-2"></div>
+                    <div class="column">
+                        <figure class="image">
+                            <img src="Images/saketh-upadhya-T-Iyi8aXI3g-unsplash.jpg"></img>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-4">Natural Habitat Conservation</h1>
+                        <br>
+                        <p>We are committed to protecting natural habitats, including forests, wetlands, and wildlife reserves. We collaborate with local communities and local authorities to develop sustainable strategies for conservation, such as ecotourism and community-based conservation initiatives.</p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <br>
+                <br>
+                <div class="columns is-vcentered has-text-centered" data-aos="fade-up">
+                    <div class="column is-2"></div>
+                    <div class="column">
+                        <h1 class="title is-4">Clean Energy Initiatives</h1>
+                        <br>
+                        <p>Our clean energy initiatives include the promotion of solar and wind power to reduce our dependence on fossil fuels. We work with government agencies, businesses, and individuals to promote renewable energy adoption and reduce greenhouse gas emissions.</p>
+                    </div>
+                    <div class="column">
+                        <figure class="image">
+                            <img src="Images/kshithij-chandrashekar-o39ytsDpWG4-unsplash.jpg"></img>
+                        </figure>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <br>
+                <br>
+                <div class="columns custom-columns is-vcentered has-text-centered" data-aos="fade-up">
+                    <div class="column is-2"></div>
+                    <div class="column">
+                        <figure class="image">
+                            <img src="Images/aaron-burden-6jYoil2GhVk-unsplash.jpg"></img>
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <h1 class="title is-4">Environmental Education</h1>
+                        <br>
+                        <p>Education is a key catalyst in promoting environmental awareness and encouraging climate action. Our programs in schools and colleges encourage sustainable practices from an early age. We facilitate the creation of eco-clubs and conduct workshops on sustainability, cultivation, and biodiversity.</p>
+                        <p>Our “Adopt a Plant” activity encourages students to take care of a plant and report to the club. At Krishi Bharat, we work closely with students, teachers, and management to build a culture of sustainability in educational institutions.</p>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+                <br>
+                <br>
+                <div class="columns is-vcentered has-text-centered" data-aos="fade-up">
+                    <div class="column is-2"></div>
+                    <div class="column">
+                        <h1 class="title is-4">Ecological Conservation</h1>
+                        <br>
+                        <p>We have implemented several initiatives in rainwater harvesting, lake rejuvenation, afforestation, conceptual indoor and outdoor gardens, sanitation, and infrastructure development.</p>
+                    </div>
+                    <div class="column">
+                        <figure class="image">
+                            <img src="Images/arif-khan-2qHYGwKRHB0-unsplash.jpg"></img>
+                        </figure>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+        </section>    
+        <footer class="footer" data-aos="fade-up">
+            <div class="columns">
+                <div class="column is-1"></div>
+                <div class="column is-2">
+                    <h1 class="title is-5">Join Us</h1>
+                    <p>Do you share our passion for the environment and conservation?</p>
+                    <p>Become a member or volunteer by writing to us.</p>
+                </div>
+                <div class="column"></div>
+                <div class="column" id="contact">
+                    <h1 class="title is-5">Contact Us</h1>
+                    <p><b>info@krishi-bharat.org</b></p>
+                    <p>Bengaluru, India</p>
+                </div>
+                <div class="column is-1"></div>
+            </div>    
+        </footer>
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+<script>
+  
+    new TypeIt("#mission_title", {
+        strings: "Mission:",
+        cursor: false,
+        speed: 50,
+        waitUntilVisible: true,
+    }).go();
+    new TypeIt("#mission_subtitle", {
+        strings: "to increase awareness of global environmental challenges and provide effective, actionable solutions to promote sustainable practices in agriculture, habitat conservation, and energy management.",
+        cursor: false,
+        speed: 15,
+        waitUntilVisible: true,
+    }).go();
+</script>
