@@ -15,7 +15,7 @@
         <style type="text/css">
             @font-face {
                font-family: 'Glacial Indifference', sans-serif;
-               src: url("GlacialIndifference-Regular.otf") format('opentype');
+               src: url('GlacialIndifference-Regular.otf');
             }
            
 
@@ -76,8 +76,37 @@
                 background-color: #002E19;
                 font-family: 'Glacial Indifference', sans-serif;
                 color: antiquewhite;
+                
+            }
+            #trustees .title
+            {
+                color: antiquewhite;
+            }
+            .card
+            {
+                margin-left: 3rem;
+                margin-right: 3rem;
+                margin-top: 1rem;
+                margin-bottom: 4rem;
+                background-color: antiquewhite;
+                font-family: 'Glacial Indifference', sans-serif;
+                shadow: 1em;
+                border: 2px  transparent;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            }
+            .card .title
+            {
+                color: hsl(0, 0%, 21%) !important;  	
+            }
+        
+            #mission{
+                scroll-margin-top: 144px;
+                scroll-snap-align: start;
             }
 
+            .main{
+                scroll-snap-align: start;
+            }
             .title {
                 font-family: 'Glacial Indifference', sans-serif;
                 font-weight: bold;
@@ -86,7 +115,13 @@
             #programs 
             {
                 color: #002E19;      
-                font-family: 'Glacial Indifference', sans-serif;        
+                font-family: 'Glacial Indifference', sans-serif;     
+                scroll-margin-top: 250px;   
+                scroll-snap-align: start;
+
+            }
+            #programs .title.is-4:not(:last-child) {
+                 margin-bottom: 0.5rem;
             }
             
             .fa-brands{
@@ -95,6 +130,9 @@
             #contact
             {
                 text-align: right;
+            }
+            .section {
+                scroll-snap-type: y mandatory; /* Enables vertical scroll snapping */
             }
 
             @media(max-width: 780px) {
@@ -107,10 +145,6 @@
             }
             .main {
                 padding-top: 100px;
-            }
-            @font-face{
-                font-family: 'Glacial Indifference', sans-serif;
-                src: url('GlacialIndifference-Regular.otf') format('opentype');
             }
         
             }
@@ -127,6 +161,7 @@
                                 <a class="navbar-item" href="#top" data-aos="fade-in" data-aos-delay="200">
                                     <img src="logo.png">
                                 </a>
+                                
                                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                                     <span aria-hidden="true"></span>
                                     <span aria-hidden="true"></span>
@@ -286,6 +321,78 @@
                     <div class="column is-2"></div>
                 </div>
         </section>    
+        <!--TRUSTEES-->
+        <section class="section has-background-grey-darker" id="trustees" data-aos="fade-up">
+            <div class="container has-text-centered">
+                <h1 class="title">Trustees</h1>
+                <br>
+                <div class="columns has-text-centered">
+                    <div class="column">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-image">
+                                <figure class="image is-square">
+                                    <img src="Images/raveendra.JPG"></img>
+                                </figure>
+                            </div>
+                            <!--<div class="card-content">
+                                <div class="content">
+                                    <h1 class="title is-4">Managing Trustee</h1>
+                                </div>
+                            </div>-->
+                            <header class="card-header">
+                                <h1 class="card-header-title is-size-5 is-centered">Raveendra Tumbaramane</h1>
+                            </header>
+                            <header class="card-header">
+                                <h1 class="card-header-title is-centered">Managing Trustee</h1>
+                            </header>
+                           
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-image">
+                                <figure class="image is-square">
+                                    <img src="Images/chandrashekhar.jpg"></img>
+                                </figure>
+                            </div>
+                            
+                            <!--<div class="card-content">
+                                <div class="content">
+                                    <h1 class="title is-4">Trustee</h1>
+                                </div>
+                            </div>-->
+                            <header class="card-header">
+                                <h1 class="card-header-title is-size-5 is-centered">Chandrashekhar Bale</h1>
+                            </header>
+                            <header class="card-header">
+                                <h1 class="card-header-title is-centered">Trustee</h1>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-image">
+                                <figure class="image is-square">
+                                    <img src="Images/sucharitha.jpg"></img>
+                                </figure>
+                            </div>
+                            <!--<div class="card-content">
+                                <div class="content">
+                                    <h1 class="title is-4">Chief Operating Officer</h1>
+                                </div>
+                            </div>-->
+                            <header class="card-header">
+                                <h1 class="card-header-title is-size-5 is-centered">Sucharitha Chandra M</h1>
+                            </header>
+                            <header class="card-header">
+                                <h1 class="card-header-title is-centered">Chief Operating Officer</h1>
+                            </header>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER-->
         <footer class="footer" data-aos="fade-up">
             <div class="columns">
                 <div class="column is-1"></div>
@@ -358,4 +465,19 @@
         speed: 15,
         waitUntilVisible: true,
     }).go();
+
+    // Array of target element IDs
+    const targetElementIds = ['mission', 'programs'];
+
+    // Calculate the desired scroll position and apply offset to each target element
+    targetElementIds.forEach((elementId) => {
+    const targetElement = document.getElementById(elementId);
+    const desiredScrollPosition = targetElement.offsetTop - 48; // Adjust the offset as needed
+
+    window.scrollTo({
+        top: desiredScrollPosition,
+       
+    });
+    });
+
 </script>
